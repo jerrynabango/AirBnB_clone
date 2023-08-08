@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""State details"""
+"""State class"""
 
 from models.base_models import BaseModel
 
