@@ -2,6 +2,7 @@
 """State details"""
 
 from models.base_models import BaseModel
+
 """Inheritance: Base Model"""
 
 
