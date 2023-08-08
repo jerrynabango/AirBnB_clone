@@ -7,5 +7,5 @@ from models.engine.file_storage import FileStorage
 """instance of class file storage interface"""
 storage = FileStorage()
 
-"""Reloads file storage with latest version of packages that are available"""
+"""Reloads file storage with latest version of packages available"""
 storage.reload()
