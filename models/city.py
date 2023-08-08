@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""City details"""
+"""City class"""
 
 from models.base_model import BaseModel
 
