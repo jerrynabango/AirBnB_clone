@@ -22,11 +22,11 @@ class FileStorage:
     __objects = {}
 
     def all(self):
-        """Return the __objects."""
+        """returns the dictionary __objects"""
         return FileStorage.__objects
 
     def new(self, obj):
-        """Set in __objects obj with key <obj_class_name>.id"""
+        """sets in __objects the obj with key <obj class name>.id"""
         ocname = obj.__class__.__name__
         FileStorage.__objects["{}.{}".format(ocname, obj.id)] = obj
 
