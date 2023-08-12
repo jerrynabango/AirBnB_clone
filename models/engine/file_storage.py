@@ -15,8 +15,10 @@ class FileStorage:
        and deserializes JSON file to instances:
     Attributes:
         __file_path: string - path to the JSON file (ex: file.json)
-        __objects: dictionary - empty but will store all objects by <class name>.id 
-        (ex: to store a BaseModel object with id=12121212, the key will be BaseModel.12121212)
+        __objects: dictionary - empty but will store all objects by
+        <class name>.id
+        (ex: to store a BaseModel object with id=12121212, the key will be
+        BaseModel.12121212)
     """
     __file_path = "file.json"
     __objects = {}
