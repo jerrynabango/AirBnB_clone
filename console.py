@@ -97,7 +97,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
-        Prints the string representation of an instance based on the class name and id."""
+        Prints the string representation of an instance
+        based on the class name and id."""
         argl = parse(arg)
         objdict = storage.all()
         if len(argl) == 0:
@@ -155,7 +156,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, arg):
         """Usage: update <class name> <id> <attribute name> "<attribute value>"
-        Updates an instance based on the class name and id by adding or updating attribute"""
+        Updates an instance based on the class name and id
+        by adding or updating attribute"""
         argl = parse(arg)
         objdict = storage.all()
 
