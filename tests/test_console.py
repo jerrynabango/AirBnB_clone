@@ -16,7 +16,6 @@ from models import storage
 
 
 
-
 class TestHBNBCommand_prompting(unittest.TestCase):
     """Unittests for testing prompting of the HBNB command interpreter."""
 
