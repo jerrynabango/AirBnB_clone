@@ -97,8 +97,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
-        Display the string representation of a class instance of a given id.
-        """
+        Prints the string representation of an instance based on the class name and id."""
         argl = parse(arg)
         objdict = storage.all()
         if len(argl) == 0:
@@ -114,7 +113,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_destroy(self, arg):
         """Usage: destroy <class> <id> or <class>.destroy(<id>)
-        Delete a class instance of a given id."""
+        Deletes an instance based on the class name and id"""
         argl = parse(arg)
         objdict = storage.all()
         if len(argl) == 0:
@@ -131,8 +130,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, arg):
         """Usage: all or all <class> or <class>.all()
-        Display string representations of all instances of a given class.
-        If no class is specified, displays all instantiated objects."""
+        Prints all string representation of all instances based"""
         argl = parse(arg)
         if len(argl) > 0 and argl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
@@ -156,11 +154,8 @@ class HBNBCommand(cmd.Cmd):
         print(count)
 
     def do_update(self, arg):
-        """Usage: update <class> <id> <attribute_name> <attribute_value> or
-       <class>.update(<id>, <attribute_name>, <attribute_value>) or
-       <class>.update(<id>, <dictionary>)
-        Update a class instance of a given id by adding or updating
-        a given attribute key/value pair or dictionary."""
+        """Usage: update <class name> <id> <attribute name> "<attribute value>"
+        Updates an instance based on the class name and id by adding or updating attribute"""
         argl = parse(arg)
         objdict = storage.all()
 
