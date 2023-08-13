@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Create a FileStorage class."""
 import json
-from models.base_model import BaseModel
 from models.user import User
 from models.state import State
 from models.city import City
@@ -40,6 +39,7 @@ class FileStorage:
             json.dump(objdict, f)
 
     def reload(self):
+        from models.base_model import BaseModel
         """deserializes the JSON file to __objects"""
         try:
             with open(FileStorage.__file_path) as f:

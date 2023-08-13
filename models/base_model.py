@@ -3,7 +3,6 @@
 
 # uuid: Universally Unique identifier for the model object.
 import uuid
-from models import storage
 from datetime import datetime
 
 
@@ -37,6 +36,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            from models import storage
             storage.new(self)
 
     def __str__(self):
@@ -51,6 +51,7 @@ class BaseModel:
             format(type(self).__name__, self.id, self.__dict__)
 
     def save(self):
+        from models import storage
         """
         updates the state of the object with the given
         attributes and returns the updated object.

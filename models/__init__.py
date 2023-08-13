@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-"""Initializes the packages"""
-
-"""importation of filestorage from engine in models"""
+"""__init__ magic method for models directory"""
 from models.engine.file_storage import FileStorage
 
-"""instance of class file storage interface"""
-storage = FileStorage()
 
-"""Reloads file storage with latest version of packages available"""
+storage = FileStorage()
 storage.reload()
