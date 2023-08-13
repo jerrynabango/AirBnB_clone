@@ -32,9 +32,9 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter.
-    Attributes:
-        prompt (str): The command prompt.
+    """a custom prompt: (hbnb)
+    quit and EOF to exit the program
+    an empty line + ENTER shouldn’t execute anything
     """
 
     prompt = "(hbnb) "
@@ -49,11 +49,11 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def emptyline(self):
-        """Do nothing upon receiving an empty line."""
+        """do nothing just empty line."""
         pass
 
     def default(self, arg):
-        """Default behavior for cmd module when input is invalid"""
+        """for invalid input do this"""
         argdict = {
             "all": self.do_all,
             "show": self.do_show,
@@ -74,7 +74,7 @@ class HBNBCommand(cmd.Cmd):
         return False
 
     def do_quit(self, arg):
-        """Quit command to exit the program."""
+        """quit the program"""
         return True
 
     def do_EOF(self, arg):
