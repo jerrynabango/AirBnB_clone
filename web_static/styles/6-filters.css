@@ -9,7 +9,7 @@
 
 .filters button {
     font-size: 18px;
-    background-color: #FF5A5F;
+    background-color: #ff5a5f;
 	color: #FFFFFF;
     height: 48px;
     width: 20%;
@@ -20,20 +20,22 @@
 }
 
 button:hover {
-    background-color: rgba(255, 90, 95, .9);
-}
-
-.locations {
-    display: inline-block;
-    height: 100%;
-    width: 25%;
-    border-right: 1px solid #DDDDDD;
+	opacity: 90%;
 }
 
 .amenities {
     display: inline-block;
+    position: relative;
     height: 100%;
     width: 25%;
+}
+
+.locations {
+	display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
 }
 
 .locations:hover, .amenities:hover {
