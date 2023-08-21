@@ -1,9 +1,17 @@
+.places {
+	text-align: center;
+}
+
+#title {
+	text-align: left;
+}
+
 .places h1 {
 	text-align: left;
 	margin-top: 30px;
 	font-size: 30px;
 }
-  
+
 .places article {
 	width: 390px;
 	padding: 20px;
